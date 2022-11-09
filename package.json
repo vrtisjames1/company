@@ -1,6 +1,9 @@
 {
   "name": "company",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.18.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -18,7 +21,7 @@
   },
   "homepage": "https://github.com/vrtisjames1/company#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "ejs": "^3.1.8"
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
   }
 }
