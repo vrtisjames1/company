@@ -1,0 +1,77 @@
+html,body {
+  min-height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  background-image: url("background.jpg");
+  margin: 0;
+  overflow: auto;
+}
+
+
+header {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  border: 1px solid grey;
+  background: rgb(186,60,60);
+  background: linear-gradient(135deg, rgba(186,60,60,1) 0%, rgba(66,90,196,1) 100%);
+}
+
+a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1em;
+  border-right: 1px solid silver;
+}
+a:last-child {
+  border-right: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* height: 100%; */
+  padding: 0.5em;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin: auto;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 850px) {
+
+  a {
+    font-size: 0.8em;
+    padding: 0.6em 0.3em 0.6em 0.3em;
+    text-decoration: underline;
+  }
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+footer {
+  padding: 20px;
+}

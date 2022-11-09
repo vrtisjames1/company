@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>History</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/history.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <div id="container">
+      <div id="description">
+        <img src="/css/avengers.jpg">
+      <h1> Our History </h1>
+      <ul>
+          <% for (let i = 0; i < movies.length; i++) { %>
+            <li> 
+            <%= movies[i]%>  
+            </li>
+          <% } %>
+      </ul>
+      <p id= "text">To resonate with people today. And to evolve with generations to come.</p>
+      </div>
+    </div>
+  </body>
+</html>

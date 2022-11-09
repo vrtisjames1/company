@@ -1,0 +1,14 @@
+#movies {
+    font-size: 2em;
+    font-size: 1em;
+    margin: none;
+}
+
+h2 {
+    margin-bottom: 0.1em;
+}
+
+#movieName {
+    margin: 0;
+    padding: 0;
+}

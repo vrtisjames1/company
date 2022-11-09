@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Past Work</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/past_work.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+    </script>
+
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <div id="container">
+
+      <div id="description">
+
+      <h1> Past Work </h1>
+      <% for (let i = 0; i < marvelHeros.length; i++) { %>
+        <h2 id=`name`><%= marvelHeros[i].name %></h2>
+        <ul id=`movies`>
+          <% for (let j = 0; j < marvelHeros[i].movies.length; j++) { %>
+            <li id=`movieName`>
+              <%= marvelHeros[i].movies[j] %>
+            </li>
+         <% } %>
+         <li>
+          <b>
+            <i>
+              <%= `Toughest Contender: ${marvelHeros[i].villan}` %>
+            </i>
+          </b>
+         </li>
+        </ul>
+         <% } %>
+      </div>
+    </div>
+  </body>
+</html>
