@@ -26,7 +26,7 @@ app.use(express.static(`public`));
 
 //render pages
 /////////////////////////////////
-app.get(`/index`, (req, res)=> {
+app.get(`/`, (req, res)=> {
 // res.send(`welcome to the home page`)
   res.render(`index.ejs`);
 })
