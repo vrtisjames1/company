@@ -6,9 +6,9 @@ if(process.env.PORT){
 	PORT = process.env.PORT
 }
 
-app.get('/', (req, res)=>{
-	res.send('hi');
-})
+// app.get('/', (req, res)=>{
+// 	res.send('hi');
+// })
 
 app.listen(PORT, ()=>{
 	console.log('listening');
@@ -26,7 +26,7 @@ app.use(express.static(`public`));
 
 //render pages
 /////////////////////////////////
-app.get(`/index`, (req, res)=> {
+app.get(`/`, (req, res)=> {
 // res.send(`welcome to the home page`)
   res.render(`index.ejs`);
 })
